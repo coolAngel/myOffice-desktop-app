@@ -1,0 +1,22 @@
+{
+  "productName": "myOffice",
+  "appId": "gr.coollab.myoffice",
+  "copyright": "Copyright © 2019 coolLab",
+  "publish": [ { "provider": "github", "releaseType": "release" } ],
+  "directories": {
+    "buildResources": "build",
+    "app": "dist_electron/bundled",
+    "output": "dist_electron"
+  },
+  "files": {
+    "filter": [
+      "dist_electron/**/*",
+      "src/background.js",
+      "background.js"
+    ]
+  },
+  "protocols": [
+    { "name": "app", "schemes": ["app"] }
+  ],
+  "generateUpdatesFilesForAllChannels": true
+}
