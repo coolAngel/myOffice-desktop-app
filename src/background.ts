@@ -27,9 +27,9 @@ function createWindow () {
     win.loadURL('app://./index.html')
   }
 
-  win.on('closed', () => {
-    win = null
-  })
+  win.on('closed', () => { win = null })
+  
+  win.webContents.openDevTools()
 }
 
 // Quit when all windows are closed.

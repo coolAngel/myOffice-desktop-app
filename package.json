@@ -1,7 +1,12 @@
 {
   "name": "my-office",
-  "version": "0.0.1-alpha",
+  "version": "0.0.3-alpha",
+  "description": "An Electron application",
   "private": true,
+  "author": {
+    "name": "coolAngel",
+    "email": "coolangel@hotmail.gr"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
