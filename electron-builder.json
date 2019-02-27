@@ -5,8 +5,8 @@
   "publish": [ { "provider": "github", "releaseType": "release" } ],
   "directories": {
     "buildResources": "build",
-    "app": "dist_electron/bundled",
-    "output": "dist_electron"
+    "output": "dist_electron",
+    "app": "dist_electron/bundled"
   },
   "files": {
     "filter": [

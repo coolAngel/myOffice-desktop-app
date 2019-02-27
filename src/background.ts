@@ -12,7 +12,7 @@ const isDevelopment = process.env.NODE_ENV !== 'production'
 let win:any|BrowserWindow
 
 // Standard scheme must be registered before the app is ready
-protocol.registerStandardSchemes(['app'], { secure: true })
+protocol.registerStandardSchemes(['myoffice'], { secure: true })
 function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({ width: 800, height: 600 })
@@ -22,9 +22,9 @@ function createWindow () {
     win.loadURL(process.env.WEBPACK_DEV_SERVER_URL as string)
     if (!process.env.IS_TEST) win.webContents.openDevTools()
   } else {
-    createProtocol('app')
+    createProtocol('myoffice')
     // Load the index.html when not in development
-    win.loadURL('app://./index.html')
+    win.loadURL('myoffice://./index.html')
   }
 
   win.on('closed', () => { win = null })
